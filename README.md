@@ -159,8 +159,10 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
    - Ortak UI parçaları (buton, metin alanı, kart vs.) `widgets/` altında saklanır.  
    - Bu yapı; kodun **temiz, bakımı kolay** ve **test edilebilir** olmasını sağlar.
 
-
-
+---
+## İletişim ve Erişim
+ Proje Bağlantısı: https://github.com/yusufsw/birim-donusturucu
+ Proje Tanıtım Videosu: https://www.youtube.com/watch?v=i7kWLlOaemo
 
 
 ---
