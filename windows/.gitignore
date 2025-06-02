@@ -1,0 +1,69 @@
+flutter/ephemeral/
+
+# Visual Studio user-specific files.
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio build-related files.
+x64/
+x86/
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
+
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Flutter/ephemeral/
+macos/Flutter/ephemeral/
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+*.iml
+
+# Android related
+android/.gradle/
+android/app/build/
+*.jks
+
+# iOS/Xcode related
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Runner.xcuserdatad/
+ios/Runner.xcuserstate
+ios/Flutter/ephemeral/
+*.xcuserstate
+*.xcworkspace
+*.xcuserdatad
+*.lock
+
+# macOS related
+macos/Pods/
+macos/Flutter/ephemeral/
+
+# VS Code/IntelliJ/IDEA
+.vscode/
+.idea/
+*.swp
+
+# Firebase/Secrets
+google-services.json
+firebase-debug.log
+
+# Misc
+*.log
+*.tmp
+*.DS_Store

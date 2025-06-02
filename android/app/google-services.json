@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "130311739220",
+    "project_id": "birim-donusturucu-92580",
+    "storage_bucket": "birim-donusturucu-92580.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130311739220:android:57f5600c82b6e229c95ac1",
+        "android_client_info": {
+          "package_name": "com.example.final_mobil_zero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130311739220-jmmg95q02ib92l6r1gm426lt663gtjvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC999CT8SmAr7Y-_rMdHb5kGAUSbMmyeOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130311739220-jmmg95q02ib92l6r1gm426lt663gtjvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130311739220:android:d9dc2d613ff41691c95ac1",
+        "android_client_info": {
+          "package_name": "com.example.midterm_project1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130311739220-jmmg95q02ib92l6r1gm426lt663gtjvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC999CT8SmAr7Y-_rMdHb5kGAUSbMmyeOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130311739220-jmmg95q02ib92l6r1gm426lt663gtjvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
