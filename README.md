@@ -110,14 +110,18 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 
 ## 👥 Grup Üyelerinin Projeye Katkısı
 
-* **Abdullatif AKKAYA**
-  - Ana sayfa (`home_page.dart`) ve kategori ızgara tasarımı  
+* **Abdussamet Oğuz**
+  - Ana sayfa (`home_page.dart`) 
   - Hacim dönüştürücü (`volume_converter.dart`)  
   - Uzunluk dönüştürücü (`length_converter.dart`)  
-  - Drawer alt menülerinin rota yönlendirmeleri  
+  - Drawer alt menülerinin rota yönlendirmeleri
+  - Ağırlık (`weight_converter.dart`)
+  -  Alan (`area_converter.dart`)
+  - Zaman (`time_converter.dart`)
+  - Sıcaklık (`weather_converter.dart`) dönüştürücüleri 
   - README / proje dokümantasyonu  
 
-* **Abdussamet OĞUZ**
+* **Abdullatif AKKAYA**
   - Kimlik doğrulama ekranları (`login.dart`, `signup.dart`)  
   - Drawer bileşenleri (`app_drawer.dart`) & özel AppBar (`custom_app_bar.dart`)  
   - Profil (`profile_page.dart`) ve Ayarlar (`settings_page.dart`) ekranları  
@@ -134,9 +138,7 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 
 ---
 
-## 💬 Diğer Bilgiler
 
-- Proje [Flutter / Sqlite] kullanılarak geliştirilmiştir.
 
 
 ---
