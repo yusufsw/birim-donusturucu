@@ -114,8 +114,6 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
   - Hacim dönüştürücü (`volume_converter.dart`)  
   - Uzunluk dönüştürücü (`length_converter.dart`)  
   - Drawer alt menülerinin rota yönlendirmeleri
-  - Ağırlık (`weight_converter.dart`)
-  -  Alan (`area_converter.dart`)
   - Zaman (`time_converter.dart`)
   - Sıcaklık (`weather_converter.dart`) dönüştürücüleri 
   - README / proje dokümantasyonu  
@@ -123,12 +121,14 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 * **Abdullatif AKKAYA**
   - Kimlik doğrulama ekranları (`login.dart`, `signup.dart`)  
   - Drawer bileşenleri (`app_drawer.dart`) & özel AppBar (`custom_app_bar.dart`)  
-  - Profil (`profile_page.dart`) ve Ayarlar (`settings_page.dart`) ekranları  
+  - Profil (`profile_page.dart`)
+  - Ayarlar (`settings_page.dart`) ekranları  
   - Supabase servis katmanı & REST API entegrasyonu  
   - Logo API entegrasyonu ve genel UI ince ayarları  
 
 * **Yusuf Talha ERDOĞMUŞ**
-  - Ağırlık (`weight_converter.dart`), Alan (`area_converter.dart`), Zaman (`time_converter.dart`) ve Sıcaklık (`weather_converter.dart`) dönüştürücüleri  
+  - Ağırlık (`weight_converter.dart`)
+  -  Alan (`area_converter.dart`) 
   - **Firebase Authentication** ve **Cloud Firestore** yapılandırması (kullanıcı + veri senkronizasyonu)  
   - Tema yönetimi & responsive tasarım (`theme.dart`)  
   - Ortak veritabanı yardımcıları (`database_helper.dart`)  
