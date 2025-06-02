@@ -23,8 +23,7 @@ Günlük hayatta sıkça ihtiyaç duyulan ölçü birimi dönüşümlerini tek b
 - **Kullanıcı Girişi** : Firebase Auth ile güvenli oturum yönetimi  
 - **Çoklu Dönüştürücü** : Uzunluk, ağırlık, alan, sıcaklık, zaman, **hacim** kategorileri  
 - **Bulut Senkronizasyonu** : Firestore + Supabase ile verilerin cihazlar arasında eşitlenmesi  
-- **Offline Desteği**  : Çoğu birim için çevrim-dışı hesaplama  
-- **Tema Yönetimi**  : Karanlık & açık mod ve sistem teması  
+- **Offline Desteği**  : Çevrim-dışı hesaplama    
 - **Çekici UI**   : Drawer navigasyonu, özelleştirilebilir renk şeması  
 
 ---
@@ -37,6 +36,60 @@ Günlük hayatta sıkça ihtiyaç duyulan ölçü birimi dönüşümlerini tek b
 - **Flaticon** (logo görselleri)  
 - **Visual Studio Code**  
 - **Android Studio / Emulator**
+- ---
+
+## Sayfaların Görevleri ve İçerikleri
+
+1. **Giriş Yap Ekranı (`login.dart`)**
+   - Kullanıcı, e-posta ve şifre ile kimlik doğrulaması yapar (Firebase Auth).
+   - Hatalı giriş uyarıları, şifreyi gizle/göster seçeneği bulunur.
+   - Başarılı oturum açma sonrası **Ana Sayfa**ya yönlendirilir.
+
+2. **Kayıt Ol Ekranı (`signup.dart`)**
+   - Yeni kullanıcı oluşturur; e-posta doğrulama ve minimum şifre kriterleri kontrolü.
+   - Firebase Auth’a kayıt yapıldıktan sonra giriş ekranına veya direkt Ana Sayfa’ya yönlendirir.
+
+3. **Ana Sayfa (`home_page.dart`)**
+   - Dönüştürücü kategorilerini (Hacim, Uzunluk, Alan, Ağırlık, Sıcaklık, Zaman) grid kartlar hâlinde listeler.
+   - Drawer menüsüne ve profil / ayarlar kısayollarına hızlı erişim sağlar.
+
+4. **Hacim Dönüştürücü (`volume_converter.dart`)**
+   - Ör. Litre → Mililitre, Galon → Litre gibi dönüşümleri destekler.
+   - İki-yönlü (source/target) anlık güncelleme, kopyala/temizle butonları.
+
+5. **Uzunluk Dönüştürücü (`length_converter.dart`)**
+   - Ör. Kilometre → Santimetre, Metre → Feet.
+   - Ondalık destekli, gerçek-zamanlı sonuç gösterimi.
+
+6. **Ağırlık Dönüştürücü (`weight_converter.dart`)**
+   - Ör. Kilogram → Gram, Libre → Kilogram.
+   - İç içe dropdown seçimleriyle birim takası.
+
+7. **Alan Dönüştürücü (`area_converter.dart`)**
+   - Ör. Metrekare → Santimetrekare, Acre → Hektar.
+   - Geniş/liste görünümüyle hesaplanan sonuç paneli.
+
+8. **Sıcaklık Dönüştürücü (`weather_converter.dart`)**
+   - Ör. ° C ↔ ° F ↔ K.
+   - Negatif, ondalık değer kabulü; input alanlarında otomatik seç-sil.
+
+9. **Zaman Dönüştürücü (`time_converter.dart`)**
+   - Ör. Dakika → Saat, Gün → Saniye.
+   - Süre çarpanları tablo görünümünde anlık güncellenir.
+
+10. **Profil Ekranı (`profile_page.dart`)**
+    - Kullanıcının kayıtlı adı, e-postası ve profil görseli (isteğe bağlı Supabase Storage) gösterilir.
+    - “Çıkış Yap”, “Şifre Değiştir” gibi işlemler.
+
+11. **Ayarlar Ekranı (`settings_page.dart`)**
+    - Tema (karanlık/açık/sistem) seçimi.
+    - Hesap & bildirim tercihleri; uygulama sürüm bilgisi.
+
+> **Not (Yeniden Kullanılan Bileşenler):**  
+> - `drawer_menu.dart` & `app_drawer.dart` → Uygulama genelinde yan menü gezintisi  
+> - `custom_app_bar.dart` → Her ekrana özel başlık çubuğu  
+> - `base_page.dart` → Ortak Scaffold + AppBar + Drawer iskeleti
+
 
 ## 👥 Grup Üyelerinin Katkıları
 
