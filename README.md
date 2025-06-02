@@ -106,15 +106,30 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 
 
 
-## 👥 Grup Üyelerinin Katkıları
+---
 
-| Grup Üyesi | Katkısı |
+## 👥 Grup Üyelerinin Projeye Katkısı
 
-| Abdullatif AKKAYA | Döviz verilerinin "https://www.exchangerate-api.com/" websitesi üzerinden api bağlantısı ile güncel olarak erişiminin sağlanması ve home_page.dart,currency_converter.dart sayfaları yapımı. |
+* **Abdullatif AKKAYA**
+  - Ana sayfa (`home_page.dart`) ve kategori ızgara tasarımı  
+  - Hacim dönüştürücü (`volume_converter.dart`)  
+  - Uzunluk dönüştürücü (`length_converter.dart`)  
+  - Drawer alt menülerinin rota yönlendirmeleri  
+  - README / proje dokümantasyonu  
 
-| Abdussamet OĞUZ | login.dart, signup.dart ve app_drawer sayfaları yapımı. Kullanıcı bilgilerinin sqlite ile database'de tutulması ve Drawer menüdeki logonun API bağlantısı ile  uygulamaya aktarılması. | Her sayfanın sağ üstteki kendine özel logoların API bağlantısı ile uygulamaya aktarılması.
+* **Abdussamet OĞUZ**
+  - Kimlik doğrulama ekranları (`login.dart`, `signup.dart`)  
+  - Drawer bileşenleri (`app_drawer.dart`) & özel AppBar (`custom_app_bar.dart`)  
+  - Profil (`profile_page.dart`) ve Ayarlar (`settings_page.dart`) ekranları  
+  - Supabase servis katmanı & REST API entegrasyonu  
+  - Logo API entegrasyonu ve genel UI ince ayarları  
 
-| Yusuf Talha ERDOĞMUŞ  | area_converter.dart, length_converter.dart, time_converter.dart, weather_converter.dart, weight_converter.dart sayfalarının yapımı. |
+* **Yusuf Talha ERDOĞMUŞ**
+  - Ağırlık (`weight_converter.dart`), Alan (`area_converter.dart`), Zaman (`time_converter.dart`) ve Sıcaklık (`weather_converter.dart`) dönüştürücüleri  
+  - **Firebase Authentication** ve **Cloud Firestore** yapılandırması (kullanıcı + veri senkronizasyonu)  
+  - Tema yönetimi & responsive tasarım (`theme.dart`)  
+  - Ortak veritabanı yardımcıları (`database_helper.dart`)  
+
 
 
 ---
