@@ -89,6 +89,63 @@ Günlük hayatta sıkça ihtiyaç duyulan ölçü birimi dönüşümlerini tek b
 > - `drawer_menu.dart` & `app_drawer.dart` → Uygulama genelinde yan menü gezintisi  
 > - `custom_app_bar.dart` → Her ekrana özel başlık çubuğu  
 > - `base_page.dart` → Ortak Scaffold + AppBar + Drawer iskeleti
+---
+
+## 🧭 Drawer Menü ve Logo API Bilgileri
+
+Drawer menüsünde gösterilen logo çevrim-içi olarak alınır; böylece depoya resim eklemeden güncel bir görsel kullanılabilir.
+
+| Özellik | Açıklama |
+| ------- | -------- |
+| **Dosya** | `lib/widgets/app_drawer.dart` *(logo çekme & Drawer arayüzü)* |
+| **API Endpoint** | `https://cdn-icons-png.flaticon.com/512/18995/18995004.png` |
+| **Kullanım Amacı** | Hafif, telifsiz bir ikon dosyasını uzak sunucudan çekip Drawer başlığında göstermek |
+| **Önbellekleme** | Flutter’ın `CachedNetworkImage` (isteğe bağlı) veya `Image.network` bileşeniyle otomatik cache |
+
+**Örnek Kod (app_drawer.dart):**
+```dart
+import 'package:flutter/material.dart';
+
+class AppDrawer extends StatelessWidget {
+  const AppDrawer({super.key});
+
+  Future<String> fetchLogoUrl() async =>
+      'https://cdn-icons-png.flaticon.com/512/18995/18995004.png';
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: FutureBuilder(
+        future: fetchLogoUrl(),
+        builder: (context, snapshot) {
+          final logoUrl = snapshot.data ??
+              'https://cdn-icons-png.flaticon.com/512/18995/18995004.png';
+          return ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              DrawerHeader(
+                decoration: const BoxDecoration(color: Colors.deepPurple),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // Eğer CachedNetworkImage kullanıyorsan:
+                    // CachedNetworkImage(imageUrl: logoUrl, height: 64),
+                    Image.network(logoUrl, height: 64),
+                    const SizedBox(height: 12),
+                    const Text('Birim Dönüştürücü',
+                        style:
+                            TextStyle(color: Colors.white, fontSize: 18)),
+                  ],
+                ),
+              ),
+              // … geri kalan menü öğeleri
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
 
 
 ## 👥 Grup Üyelerinin Katkıları
