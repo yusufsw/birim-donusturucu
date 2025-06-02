@@ -1,82 +1,42 @@
-## 📱 Birim Dönüştürücü
+# 📱 Birim Dönüştürücü
 
-    Çeşitli ölçü birimlerini farklı birimlere dönüştüren basit bir mobil uygulama
-
+Birim Dönüştürücü, kullanıcıların **uzunluk, ağırlık, alan, sıcaklık, zaman ve hacim** gibi farklı ölçü birimlerini hızlı ve kolay biçimde dönüştürmesine olanak tanıyan bir **Flutter** uygulamasıdır. Modern arayüzü, çevrim-dışı/çevrim-içi çalışabilen mantığı ve bulutta tutulan kullanıcı verileriyle pratik bir deneyim sunar.
 
 ---
 
-## 📄 Sayfalar ve Görevleri
+## Projenin Amacı
+Günlük hayatta sıkça ihtiyaç duyulan ölçü birimi dönüşümlerini tek bir mobil uygulamada toplamak; kullanıcıların farklı uygulamalar arasında geçiş yapmadan güvenilir ve kolay erişilebilir bir araç kullanmasını sağlamaktır.
 
-- **area_converter.dart**  
-  Alan cinsinden dönüştürücü örn. cm² -->  m²
-
-- **currency_converter.dart**  
-  Para birimlerini api yardımıyla dönüştürücü örn. USD --> TRY
-  
-- **home_page.dart**  
-  Dönüştürelecek birimlerin seçim sayfası (Uzunluk, Ağırlık, Alan, Sıcaklık, Zaman, Döviz)
-  
-- **length_converter.dart**  
-  Uzunluk cinsinden dönüştürücü örn. km --> cm
-
-- **login.dart**  
-  Kullanıcı giriş sayfası
-
-- **signup.dart**  
-  Kullanıcı kayıt olma sayfası
-
-- **time_converter.dart**  
-  Zaman cinsinden dönüştürücü örn. dakika --> saat
-
-- **weather_converter.dart**  
-  Sıcaklık cinsinden dönüştürücü örn. Celsius --> Kelvin
-
-- **weight_converter.dart**  
-  Ağırlık cinsinden dönüştürücü örn. kg --> mg
 ---
 
-## 🧭 Drawer Menüde Kullanılan Logo – API Bilgileri
+## Teknik Detaylar
+- **Flutter (Dart)** : Uygulamanın temel geliştirme platformu  
+- **Firebase Authentication** : Güvenli kullanıcı kimlik doğrulama  
+- **Cloud Firestore** : Notlar ve ayarlar vb. için gerçek-zamanlı veritabanı  
+- **Supabase**   : Yedek veri depolama + REST API desteği  
+- **HTTP/JSON**   : Harici hizmetlerden (Flaticon logosu vb.) veri çekmek için  
+- **Responsive Tasarım** : Tüm cihaz boyutlarına uyumlu esnek arayüz  
 
-Drawer menüsünde kullanılan logo, aşağıdaki API üzerinden alınmıştır:
-
-- **API Kullanılan Dosya** /lib/db/widgets/app_drawer.dart
-- **API Endpoint:** "https://cdn-icons-png.flaticon.com/512/18995/18995004.png"
-- **Kullanım Şekli:** API’den belirli bir logo görseli alınarak drawer menüsünde gösterilir.
-  
-- **Örnek Kullanım (Drawer'da):**
-
-```dart
-Future<String> fetchLogoUrl() async {
-  return 'https://cdn-icons-png.flaticon.com/512/18995/18995004.png';
-}
-```
 ---
 
-## 💱 Döviz API Kullanımı
-Döviz dönüştürücüde kullanılan API:
+## Öne Çıkan Özellikler
+- **Kullanıcı Girişi** : Firebase Auth ile güvenli oturum yönetimi  
+- **Çoklu Dönüştürücü** : Uzunluk, ağırlık, alan, sıcaklık, zaman, **hacim** kategorileri  
+- **Bulut Senkronizasyonu** : Firestore + Supabase ile verilerin cihazlar arasında eşitlenmesi  
+- **Offline Desteği**  : Çoğu birim için çevrim-dışı hesaplama  
+- **Tema Yönetimi**  : Karanlık & açık mod ve sistem teması  
+- **Çekici UI**   : Drawer navigasyonu, özelleştirilebilir renk şeması  
 
-API: https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD
-
-Kütüphane: http
-
-Uygulama içi kullanım:
-```dart
-final response = await http.get(Uri.parse('https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD'));
-final data = json.decode(response.body);
-```
-Bu sayede güncel USD tabanlı döviz kurları elde edilip farklı para birimleri arasında dönüşüm sağlanmaktadır.
 ---
-## 🔐 Login Bilgilerinin Saklanması
 
-Kullanıcının giriş bilgileri güvenli bir şekilde şu şekilde saklanmaktadır:
-
---
-SQLITE
-Android Studio'da View > Tool Windows > Device Explorer 
-data > data > com.example.midterm_project1 > databases > users.db
-
-Bu yol ile kullanıcı kayıtları bulunabilir. Kayıtlar emülatör cihazının içinde saklı ve kayıtlı.
----
+## Kullanılan Teknolojiler
+- **Flutter SDK / Dart 3**  
+- **Firebase (Auth & Firestore)**  
+- **Supabase**  
+- **HTTP / JSON Decode**  
+- **Flaticon** (logo görselleri)  
+- **Visual Studio Code**  
+- **Android Studio / Emulator**
 
 ## 👥 Grup Üyelerinin Katkıları
 
