@@ -136,6 +136,31 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 
 
 ---
+---
+
+## 🧩 Modülerlik ve Kod Yapısı
+
+1. **Widgets (Bileşenler)**
+   - `app_drawer.dart`    : Yan menü başlığı + navigasyon öğeleri  
+   - `drawer_menu.dart`   : Drawer’daki ListTile dizilimi  
+   - `custom_app_bar.dart` : Her ekranda tekrar kullanılan başlık çubuğu  
+   - `base_page.dart`    : Ortak `Scaffold` (AppBar + Drawer) iskeleti  
+
+2. **Ekranlar (Pages / Screens)**
+   - Her dönüştürücü ve kullanıcı ekranı (ör. `volume_converter.dart`, `login.dart`, `settings_page.dart`) **ayrı** dosyada tanımlıdır.  
+   - Böylece UI mantığı minimal kalır, iş mantığı servis katmanına delege edilir.  
+
+3. **Servis Katmanı (Services)**
+   - `database_helper.dart` : **Supabase** CRUD işlemleri + Firestore okuma/yazma yardımcıları  
+   - `firebase_options.dart` : Firebase’in çok-platform yapılandırma anahtarları  
+   - *(Opsiyonel)* `auth_service.dart` : Firebase Authentication oturum aç/kapa, token yenileme  
+
+
+4. **Tekrar Kullanılabilirlik**
+   - Dönüştürme formülleri izole yardımcı sınıflarda (örn. `unit_converter.dart`).  
+   - Ortak UI parçaları (buton, metin alanı, kart vs.) `widgets/` altında saklanır.  
+   - Bu yapı; kodun **temiz, bakımı kolay** ve **test edilebilir** olmasını sağlar.
+
 
 
 
