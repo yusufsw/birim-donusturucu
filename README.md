@@ -189,9 +189,6 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 ### 🌡️ Sıcaklık Dönüştürücü
 ![Sıcaklık](./pnginapp/temp.png)
 
-### 💱 Döviz Dönüştürücü
-![Currency](./pnginapp/currency.png)
 
----
 
 
