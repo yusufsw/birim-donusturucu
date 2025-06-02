@@ -161,8 +161,8 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 
 ---
 ## İletişim ve Erişim
- Proje Bağlantısı: https://github.com/yusufsw/birim-donusturucu
- Proje Tanıtım Videosu: https://www.youtube.com/watch?v=i7kWLlOaemo
+   - Proje Bağlantısı: https://github.com/yusufsw/birim-donusturucu
+   - Proje Tanıtım Videosu: https://www.youtube.com/watch?v=i7kWLlOaemo
 
 
 ---
