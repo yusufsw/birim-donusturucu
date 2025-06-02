@@ -33,8 +33,7 @@ Günlük hayatta sıkça ihtiyaç duyulan ölçü birimi dönüşümlerini tek b
 - **Firebase (Auth & Firestore)**  
 - **Supabase**  
 - **HTTP / JSON Decode**  
-- **Flaticon** (logo görselleri)  
-- **Visual Studio Code**  
+- **Flaticon** (logo görselleri)   
 - **Android Studio / Emulator**
 - ---
 
