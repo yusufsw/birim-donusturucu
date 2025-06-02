@@ -135,7 +135,6 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 
 
 ---
----
 
 ## 🧩 Modülerlik ve Kod Yapısı
 
