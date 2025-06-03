@@ -169,10 +169,10 @@ Drawer menüsündeki başlık, logoyu uzaktan (Flaticon) alır ve kullanıcıya 
 ## 📸 Uygulama İçi Görseller
 
 ### 🏠 Ana Sayfa
-![Ana Sayfa](./pnginapp/anasayfa.png)
+![Ana Sayfa](pnginapp/AnaSayfa.png)
 
 ### 📦 Drawer Menü
-![Drawer](./pnginapp/drawer.png)
+![Drawer](pnginapp/Drawer.png)
 
 ### 🌍 Alan Dönüştürücü
 ![Alan](./pnginapp/alan.png)
